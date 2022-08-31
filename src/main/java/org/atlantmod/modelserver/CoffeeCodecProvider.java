@@ -31,6 +31,6 @@ public class CoffeeCodecProvider implements CodecProvider {
     }
 
     public int getPriority(String modelUri, String format) {
-        return this.getAllFormats().contains(format) ? 1 : -1;
+        return this.getAllFormats().contains(format) ? 10 : -1;
     }
 }
